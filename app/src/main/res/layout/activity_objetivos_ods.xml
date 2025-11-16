@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1F5FE"
+    tools:context=".ObjetivosOdsActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+
+        <ImageButton
+            android:id="@+id/btn_back_to_mar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_voltar"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="Botão de Voltar para a Tela do Mar"
+            app:tint="#004D40"/>
+
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+
+
+            android:layout_marginTop="32dp"
+
+
+            android:layout_below="@id/btn_back_to_mar">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nossos Objetivos ODS"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#004D40"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_horizontal" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conheça os pilares de Sustentabilidade do App"
+                android:textSize="17sp"
+                android:textColor="#00838F"
+                android:layout_marginBottom="32dp"
+                android:layout_gravity="center_horizontal"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ODS 4: Educação de Qualidade"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#9E9D24"
+                android:layout_marginBottom="8dp"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#FFF9C4">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O Objetivo: Visa assegurar a educação inclusiva, equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todos, até 2030."
+                        android:textColor="#333"
+                        android:textSize="17sp"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Relevância para o App: Este é o pilar metodológico do nosso aplicativo. A ODS 4 reconhece que a educação é a base para a mudança sustentável. Estruturamos o conteúdo de forma didática, com quizzes e temas claros, para transformar a informação complexa sobre a vida marinha em conhecimento acessível e prático, capacitando o usuário a tomar decisões informadas e pró-ambientais."
+                        android:textColor="#333"
+                        android:textSize="15sp"
+                        android:layout_marginTop="12dp"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ODS 14: Vida na Água"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#1565C0"
+                android:layout_marginBottom="8dp"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#BBDEFB">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O Objetivo: Propõe conservar e usar de forma sustentável os oceanos, mares e os recursos marinhos para o desenvolvimento sustentável."
+                        android:textColor="#333"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Relevância para o App: Esta é a missão temática do aplicativo. A ODS 14 foca em metas cruciais como a redução da poluição marinha de todos os tipos, minimização da acidificação dos oceanos e proteção de áreas marinhas e costeiras. Todas as nossas subseções (Ameaças &amp; Perigo, Fauna e Flora) são ferramentas diretas para educar sobre as metas da ODS 14 e promover ações para sua conservação."
+                        android:textColor="#333"
+                        android:textSize="15sp"
+                        android:layout_marginTop="12dp" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ODS 17: Parcerias e Meios de Implementação"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_green"
+                android:layout_marginBottom="8dp"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#9bff8f">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O Objetivo: Busca fortalecer os meios de implementação e revitalizar a parceria global para o desenvolvimento sustentável."
+                        android:textColor="#0E2E00"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Relevância para o App: A ODS 17 é a ponte para a ação. Ela incentiva a colaboração entre governos, setor privado e sociedade civil. O aplicativo atende a este objetivo ao incluir a seção 'Ações de Voluntariado'. Esta seção atua como um hub, incentivando o usuário a fazer parcerias com grupos locais, ONGs e outras iniciativas, transformando o aprendizado individual em impacto coletivo global e local."
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="12dp"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

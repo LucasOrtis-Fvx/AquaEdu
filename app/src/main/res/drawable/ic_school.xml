@@ -1,0 +1,33 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Fundo sutil do prédio -->
+    <path
+        android:fillColor="#FFBB86FC"
+        android:pathData="M4,10h16v10H4z"
+        android:fillAlpha="0.2" />
+
+    <!-- Corpo principal da escola -->
+    <path
+        android:fillColor="#FF6200EE"
+        android:pathData="M12,2L2,7v2h2v9h16v-9h2V7L12,2zM12,4.5l6.5,3.25H5.5L12,4.5zM18,16H6v-5h12v5z" />
+
+    <!-- Porta -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M10,11h4v5h-4z" />
+
+    <!-- Janela esquerda -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M7,11h2v2H7z" />
+
+    <!-- Janela direita -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M15,11h2v2h-2z" />
+
+</vector>

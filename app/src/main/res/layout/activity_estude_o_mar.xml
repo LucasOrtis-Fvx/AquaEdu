@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1F5FE"
+    tools:context=".OdsMarActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <ImageButton
+            android:id="@+id/btn_back_to_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_voltar"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="Botão de Voltar para o Menu"
+            app:tint="#004D40"/>
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="16dp">
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ODS &amp; Vida Marinha"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#004D40"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_horizontal" /> <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Educação e Conscientização sobre os Oceanos"
+            android:textSize="16sp"
+            android:textColor="#00838F"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conteúdo e Recursos"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="16dp"/>
+
+
+
+
+
+
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
+                android:useDefaultMargins="true">
+
+
+
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_conscientizacao"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#00ACC1"> <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+
+
+
+
+
+
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_dialog_alert"
+                        android:contentDescription="Ícone de Alerta de Perigo Ambiental"
+                        app:tint="@android:color/white" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ameaças &amp; Perigo"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_objetivos_ods"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#4DD0E1"> <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+
+
+
+
+
+
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_menu_info_details"
+                        android:contentDescription="Ícone de Informação sobre ODS"
+                        app:tint="@android:color/white" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Objetivos ODS"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_exercicios_mar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#00897B">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="12dp"
+                        android:gravity="center">
+
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_fish"
+                            android:contentDescription="Ícone de peixe representando animais marinhos"
+                            app:tint="@android:color/white" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Animais Marinhos"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_fauna_flora"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#00695C">
+
+                    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+
+
+
+
+
+
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_menu_gallery"
+                        android:contentDescription="Ícone de Fauna e Flora"
+                        app:tint="@android:color/white" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fauna e Flora"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+            </GridLayout>
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Como Você Pode Ajudar"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp"/>
+
+
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_voluntariado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="#C8E6C9"> <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+
+
+
+
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@android:drawable/ic_menu_myplaces"
+                    android:contentDescription="Ícone de Voluntariado e Ações"
+                    app:tint="#388E3C" />
+
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Ações de Voluntariado e Limpeza"
+                    android:textColor="#333"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

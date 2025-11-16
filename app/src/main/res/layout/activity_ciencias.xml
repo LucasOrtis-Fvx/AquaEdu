@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#E3F2FD">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+
+            <ImageButton
+                android:id="@+id/btn_voltar_ciencia"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/icon_voltar"
+                android:contentDescription="Voltar"
+                android:padding="6dp"
+                app:tint="#0D47A1" />
+
+
+            <TextView
+                android:id="@+id/titulo_ciencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🌿 Ciências – 5º Ano"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#0D47A1" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtConteudoCiencias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+Nesta área, vamos aprender sobre o corpo humano, a natureza, a água, a energia e muito mais! A Ciência nos ajuda a entender o mundo e a cuidar dele de forma sustentável 🌎💧.
+
+
+Clique nos botões abaixo para ver os temas!
+"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="#212121"
+            android:lineSpacingExtra="4dp" />
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/btnCorpoHumano"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Corpo Humano 🫀"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#1B5E20"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnAgua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A Água 💧"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#1565C0"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnMateria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Matéria 🧊"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#4A148C"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnEnergia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Energia ⚡"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#E65100"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnEcossistemas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ecossistemas 🌳"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#2E7D32"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnCuriosidades"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Curiosidades 🔍"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#01579B"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/txtCorpoHumano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#E8F5E9"
+            android:padding="12dp"
+            android:text="
+🫀 O Corpo Humano
+
+
+O corpo humano é formado por vários sistemas que trabalham juntos para nos manter vivos e saudáveis. Os principais são:
+
+
+• Sistema digestório: transforma os alimentos em energia.
+• Sistema respiratório: capta oxigênio do ar.
+• Sistema circulatório: leva sangue e nutrientes para todo o corpo.
+• Sistema nervoso: controla nossos movimentos e pensamentos.
+• Sistema locomotor: permite que a gente se mova!
+" />
+
+
+        <TextView
+            android:id="@+id/txtAgua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#BBDEFB"
+            android:padding="12dp"
+            android:text="
+💧 A Água e sua Importância
+
+
+A água é essencial para a vida de todos os seres vivos. Ela está em rios, mares, lagos, no ar e até dentro de nós! Nosso corpo é formado por cerca de 70% de água.
+
+
+Devemos economizar água sempre: fechando a torneira ao escovar os dentes, tomando banhos rápidos e evitando o desperdício. 💦
+" />
+
+
+        <TextView
+            android:id="@+id/txtMateria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#E1BEE7"
+            android:padding="12dp"
+            android:text="
+🧊 Estados Físicos da Matéria
+
+
+Tudo o que existe ao nosso redor é feito de matéria! A matéria pode aparecer em três estados principais:
+
+
+• Sólido: tem forma e volume definidos (ex: pedra, mesa).
+• Líquido: tem volume, mas muda de forma (ex: água, suco).
+• Gasoso: não tem forma nem volume definidos (ex: ar, vapor).
+" />
+
+
+        <TextView
+            android:id="@+id/txtEnergia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#FFCCBC"
+            android:padding="12dp"
+            android:text="
+⚡ Fontes de Energia e Sustentabilidade
+
+
+A energia está em tudo: na luz do sol, nos alimentos e até na eletricidade! As fontes de energia podem ser renováveis (como o sol, o vento e a água) ou não renováveis (como o petróleo e o carvão).
+
+
+Usar energia com consciência é importante para proteger o planeta. Apague as luzes quando sair do quarto e desligue aparelhos que não estiver usando. 🌞🌬️
+" />
+
+
+        <TextView
+            android:id="@+id/txtEcossistemas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#C8E6C9"
+            android:padding="12dp"
+            android:text="
+🌳 Ecossistemas e Preservação Ambiental
+
+
+Um ecossistema é o conjunto de seres vivos (como plantas e animais) que vivem em um mesmo ambiente e interagem com o ar, a água e o solo. Exemplo: floresta, rio, deserto e oceano.
+
+
+Cuidar do meio ambiente é dever de todos! Evite jogar lixo nos rios, recicle, plante árvores e ensine outras pessoas a cuidarem da natureza. 🌱
+" />
+
+
+        <TextView
+            android:id="@+id/txtCuriosidades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#B3E5FC"
+            android:padding="12dp"
+            android:text="
+🔍 Curiosidades
+
+
+• O coração bate cerca de 100 mil vezes por dia!
+• As plantas produzem oxigênio durante o dia.
+• A água cobre 70% da superfície da Terra.
+• O sol é uma estrela enorme que nos dá luz e calor.
+" />
+
+
+        <TextView
+            android:text="Aprender Ciências é aprender a cuidar de si, dos outros e do planeta 🌍. Continue explorando, observando e descobrindo o mundo com curiosidade!"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:padding="16dp"
+            android:textColor="#0D47A1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+</ScrollView>

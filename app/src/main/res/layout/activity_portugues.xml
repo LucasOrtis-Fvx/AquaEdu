@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewPortugues"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E0"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+
+            <ImageButton
+                android:id="@+id/btn_voltar_portugues"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_voltar"
+                android:tint="#000"
+                android:contentDescription="Voltar"
+                tools:ignore="UseAppTint" />
+
+
+            <TextView
+                android:id="@+id/txtTituloPortugues"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🇧🇷 Português – 5º Ano"
+                android:textColor="#4E342E"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtIntroducaoPortugues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A língua portuguesa é a nossa principal forma de comunicação! Vamos revisar leitura, escrita, gramática e interpretação de textos de forma clara e divertida! ✨"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:padding="8dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp">
+
+
+            <Button
+                android:id="@+id/btnLeitura"
+                android:text="Leitura"
+                android:backgroundTint="#8E24AA"
+                android:textColor="#FFFFFF"
+                android:layout_margin="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/btnGramática"
+                android:text="Gramática"
+                android:backgroundTint="#1976D2"
+                android:textColor="#FFFFFF"
+                android:layout_margin="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/btnEscrita"
+                android:text="Escrita"
+                android:backgroundTint="#2E7D32"
+                android:textColor="#FFFFFF"
+                android:layout_margin="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtLeitura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="#F3E5F5"
+            android:textColor="#4A148C"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:padding="12dp"
+            android:text="
+📖 LEITURA E INTERPRETAÇÃO DE TEXTO
+
+
+Ler é compreender o que está sendo dito. Sempre que ler um texto, pense:
+• Quem são os personagens?
+• Onde a história acontece?
+• Qual o tema principal?
+• Qual é a mensagem que o autor quer passar?
+
+
+🧠 Dica: Leia com atenção e tente imaginar a cena na sua mente!" />
+
+
+        <TextView
+            android:id="@+id/txtGramatica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="#E3F2FD"
+            android:textColor="#0D47A1"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:padding="12dp"
+            android:text="
+🔤 GRAMÁTICA E ORTOGRAFIA
+
+
+📚 Classes Gramaticais:
+• Substantivo → nomeia seres (casa, menino, flor)
+• Adjetivo → característica (bonito, feliz)
+• Verbo → ação (correr, brincar)
+• Advérbio → modifica verbo (correu rápido)
+• Artigo → o, a, um, uma
+• Pronome → ele, nós, aquele
+• Preposição → de, para, com
+
+
+✏️ Ortografia e Acentuação:
+• Á, É, Í, Ó, Ú → acento agudo
+• Â, Ê, Ô → circunflexo
+• Cuidado com: MAS (contraste) x MAIS (quantidade)
+• Oxítonas terminadas em “-em” ou “-ens” também levam acento!
+
+
+🎵 Sílaba Tônica:
+• Oxítonas: última (café)
+• Paroxítonas: penúltima (lápis)
+• Proparoxítonas: antepenúltima (médico)" />
+
+
+        <TextView
+            android:id="@+id/txtEscrita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="#E8F5E9"
+            android:textColor="#1B5E20"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:padding="12dp"
+            android:text="
+✍️ PRODUÇÃO DE TEXTO
+
+
+1️⃣ Planeje o que vai escrever.
+2️⃣ Tenha começo, meio e fim.
+3️⃣ Use pontuação e letras maiúsculas corretamente.
+4️⃣ Revise o texto antes de entregar.
+
+
+💬 Figuras de Linguagem:
+• Metáfora → Ela é uma flor.
+• Comparação → Ela é bela como uma flor.
+• Personificação → O vento cantava.
+• Hipérbole → Morre de tanto rir.
+
+
+🌟 Dica: Escrever é colocar o pensamento no papel!" />
+
+
+        <TextView
+            android:id="@+id/txtFinalPortugues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A leitura e a escrita nos fazem crescer! Leia sempre, escreva com carinho e aprenda novas palavras todos os dias. 💬📚"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:textColor="#4E342E"
+            android:gravity="center"
+            android:padding="16dp" />
+    </LinearLayout>
+</ScrollView>

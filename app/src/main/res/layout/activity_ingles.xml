@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFF8E1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+
+            <ImageButton
+                android:id="@+id/btn_voltar_ingles"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/icon_voltar"
+                android:padding="6dp"
+                android:contentDescription="Voltar"
+                app:tint="#1A237E" />
+
+
+            <TextView
+                android:id="@+id/titulo_ingles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🇬🇧 Inglês – 5º Ano"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#1A237E" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtConteudoIngles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+Aprender inglês é abrir as portas para o mundo 🌍! Vamos conhecer palavras e frases usadas no dia a dia, de forma simples e divertida!
+
+
+Clique nos botões abaixo para explorar os tópicos.
+"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="#212121"
+            android:lineSpacingExtra="4dp" />
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/btnGreetings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Greetings 👋"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#0D47A1"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnColorsNumbers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Colors &amp; Numbers 🎨"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#4A148C"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnFamily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Family 👨‍👩‍👧‍👦"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#1B5E20"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Body 🧍‍♂️"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#C2185B"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnRoutine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Routine 🕒"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#E65100"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food 🍎"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#880E4F"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnCulture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Culture 🌍"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#0277BD"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/txtGreetings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#BBDEFB"
+            android:padding="12dp"
+            android:text="
+👋 Greetings and Introductions
+
+
+Saudações e apresentações são usadas para cumprimentar e conhecer pessoas. Veja alguns exemplos:
+
+
+• Hello! / Hi! → Olá!
+• Good morning → Bom dia
+• Good afternoon → Boa tarde
+• Good night → Boa noite (usado ao se despedir para dormir)
+• What’s your name? → Qual é o seu nome?
+• My name is Ana. → Meu nome é Ana.
+" />
+
+
+        <TextView
+            android:id="@+id/txtColorsNumbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#E1BEE7"
+            android:padding="12dp"
+            android:text="
+🎨 Colors and Numbers
+
+
+As cores e os números são muito usados no dia a dia. Vamos lembrar alguns:
+
+
+• Colors: red (vermelho), blue (azul), green (verde), yellow (amarelo), black (preto), white (branco).
+
+
+• Numbers: one (1), two (2), three (3), four (4), five (5), six (6), seven (7), eight (8), nine (9), ten (10).
+" />
+
+
+        <TextView
+            android:id="@+id/txtFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#C8E6C9"
+            android:padding="12dp"
+            android:text="
+👨‍👩‍👧‍👦 Family and Friends
+
+
+As palavras sobre família e amigos ajudam a falar sobre quem amamos ❤️:
+
+
+• Father → Pai
+• Mother → Mãe
+• Brother → Irmão
+• Sister → Irmã
+• Friend → Amigo(a)
+
+
+Example: My mother is beautiful. → Minha mãe é bonita.
+" />
+
+
+        <TextView
+            android:id="@+id/txtBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#F8BBD0"
+            android:padding="12dp"
+            android:text="
+🧍‍♂️ Parts of the Body
+
+
+Aprenda o nome das partes do corpo em inglês:
+
+
+• Head → Cabeça
+• Eyes → Olhos
+• Ears → Orelhas
+• Mouth → Boca
+• Hands → Mãos
+• Legs → Pernas
+" />
+
+
+        <TextView
+            android:id="@+id/txtRoutine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#FFCCBC"
+            android:padding="12dp"
+            android:text="
+🕒 Daily Routine
+
+
+Falar sobre a rotina diária é importante para descrever o que fazemos todos os dias:
+
+
+• I wake up at 7 o’clock. → Eu acordo às 7 horas.
+• I go to school. → Eu vou para a escola.
+• I have lunch at noon. → Eu almoço ao meio-dia.
+• I do my homework. → Eu faço minha lição.
+• I go to bed. → Eu vou dormir.
+" />
+
+
+        <TextView
+            android:id="@+id/txtFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#F48FB1"
+            android:padding="12dp"
+            android:text="
+🍎 Food and Likes
+
+
+Comidas e preferências são temas muito usados em conversas simples. Veja:
+
+
+• Apple → Maçã
+• Rice → Arroz
+• Bread → Pão
+• Milk → Leite
+• I like pizza. → Eu gosto de pizza.
+• I don’t like coffee. → Eu não gosto de café.
+" />
+
+
+        <TextView
+            android:id="@+id/txtCulture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#B3E5FC"
+            android:padding="12dp"
+            android:text="
+🌍 Countries and Curiosities
+
+
+O inglês é falado em muitos países! 🇺🇸🇬🇧🇨🇦🇦🇺 Veja alguns:
+
+
+• United States (EUA)
+• United Kingdom (Reino Unido)
+• Canada (Canadá)
+• Australia (Austrália)
+
+
+Curiosidade: a palavra ‘color’ é usada nos EUA, mas na Inglaterra se escreve ‘colour’. 🇬🇧
+" />
+
+
+        <TextView
+            android:text="Aprender inglês é divertido e ajuda você a se comunicar com o mundo todo 🌎. Practice every day and have fun!"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:padding="16dp"
+            android:textColor="#1A237E"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

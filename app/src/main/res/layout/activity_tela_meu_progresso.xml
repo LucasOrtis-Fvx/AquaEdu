@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".tela_Meu_Progresso">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            app:tint="?android:attr/textColorPrimary"
+            app:srcCompat="@drawable/icon_voltar"
+            android:layout_marginBottom="8dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_periodo_v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+            tools:text="Resumo de 28/09 a 04/10" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardElevation="4dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/purple_200">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/progress_participacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:indicatorColor="@color/purple_500"
+                    app:indicatorSize="80dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:trackColor="@color/purple_200"
+                    app:trackThickness="8dp"
+                    tools:progress="95" />
+
+
+                <TextView
+                    android:id="@+id/tv_percentual_participacao_v2"
+                    style="@style/TextAppearance.Material3.HeadlineSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/progress_participacao"
+                    app:layout_constraintEnd_toEndOf="@id/progress_participacao"
+                    app:layout_constraintStart_toStartOf="@id/progress_participacao"
+                    app:layout_constraintTop_toTopOf="@id/progress_participacao"
+                    tools:text="95%" />
+
+
+                <TextView
+                    android:id="@+id/tv_titulo_participacao"
+                    style="@style/TextAppearance.Material3.TitleLarge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/participation_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/progress_participacao"
+                    app:layout_constraintTop_toTopOf="@id/progress_participacao" />
+
+
+                <TextView
+                    style="@style/TextAppearance.Material3.BodyMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Total de atividades entregues."
+                    android:textColor="?android:attr/textColorSecondary"
+                    app:layout_constraintBottom_toBottomOf="@id/progress_participacao"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/progress_participacao" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="4dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/teal_200">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/progress_desempenho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:indicatorColor="@color/teal_700"
+                    app:indicatorSize="80dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:trackColor="@color/teal_200"
+                    app:trackThickness="8dp"
+                    tools:progress="88" />
+
+
+                <TextView
+                    android:id="@+id/tv_percentual_desempenho_v2"
+                    style="@style/TextAppearance.Material3.HeadlineSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/progress_desempenho"
+                    app:layout_constraintEnd_toEndOf="@id/progress_desempenho"
+                    app:layout_constraintStart_toStartOf="@id/progress_desempenho"
+                    app:layout_constraintTop_toTopOf="@id/progress_desempenho"
+                    tools:text="88%" />
+
+
+                <TextView
+                    style="@style/TextAppearance.Material3.TitleLarge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/performance_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/progress_desempenho"
+                    app:layout_constraintTop_toTopOf="@id/progress_desempenho" />
+
+
+                <TextView
+                    style="@style/TextAppearance.Material3.BodyMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Média de acertos nas questões."
+                    android:textColor="?android:attr/textColorSecondary"
+                    app:layout_constraintBottom_toBottomOf="@id/progress_desempenho"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/progress_desempenho" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/chapters_summary"
+            android:textAppearance="@style/TextAppearance.Material3.TitleLarge" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardElevation="2dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <TextView
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/needs_more_study"
+                    android:textColor="#D32F2F" />
+
+
+                <TextView
+                    android:id="@+id/tv_lista_precisa_estudar_v2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingMultiplier="1.2"
+                    tools:text="[Matemática] Cap. 05 - Funções Trigonométricas\n[Física] Cap. 07 - Leis de Newton" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+</ScrollView>

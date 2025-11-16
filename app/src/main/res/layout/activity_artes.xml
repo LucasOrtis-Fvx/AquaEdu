@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFF8E1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+
+            <ImageButton
+                android:id="@+id/btn_voltar_artes"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/icon_voltar"
+                android:padding="6dp"
+                android:contentDescription="Voltar"
+                app:tint="#6A1B9A" />
+
+
+            <TextView
+                android:id="@+id/titulo_artes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎨 Artes – 5º Ano"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#6A1B9A" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtConteudoArtes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+A arte está em tudo! Ela expressa sentimentos, ideias e histórias por meio de sons, cores, formas, gestos e movimentos. Vamos aprender sobre as diferentes linguagens artísticas e suas funções. 🌈
+
+
+Clique nos botões abaixo para ver os tópicos de Artes!
+"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="#212121"
+            android:lineSpacingExtra="4dp" />
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/btnOQueEhArte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="O que é Arte? 🖌️"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#4A148C"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnLinguagens"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Linguagens 🎭"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#C62828"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnElementos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Elementos Visuais 🖼️"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#2E7D32"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnCores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cores e Emoções 🎨"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#1565C0"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnHistoria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arte e História 🏺"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#AD1457"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnArtistas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grandes Artistas 🧑‍🎨"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#4527A0"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnSustentabilidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sustentabilidade 🌎"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#00897B"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/txtOQueEhArte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#E1BEE7"
+            android:padding="12dp"
+            android:text="
+🖌️ O que é Arte?
+
+
+Arte é a forma como o ser humano expressa suas emoções e visões de mundo. Ela pode estar presente em pinturas, músicas, danças, esculturas, teatro, cinema e até nas construções! 🏛️
+
+
+A arte nos ajuda a compreender o passado, imaginar o futuro e refletir sobre quem somos.
+" />
+
+
+        <TextView
+            android:id="@+id/txtLinguagens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#FFCDD2"
+            android:padding="12dp"
+            android:text="
+🎭 Linguagens da Arte
+
+
+1️⃣ Artes Visuais → pinturas, desenhos, esculturas, fotografias, colagens e gravuras.
+2️⃣ Música → combinação de sons e silêncios. Elementos: ritmo, melodia e harmonia.
+3️⃣ Dança → expressão por meio do corpo e do movimento.
+4️⃣ Teatro → mistura de fala, corpo, expressão e emoção.
+5️⃣ Cinema → arte do movimento das imagens e da narrativa audiovisual.
+" />
+
+
+        <TextView
+            android:id="@+id/txtElementos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#C8E6C9"
+            android:padding="12dp"
+            android:text="
+🖼️ Elementos Visuais da Arte
+
+
+Os elementos básicos da arte visual são:
+• Ponto → o menor elemento visual.
+• Linha → pode ser reta, curva, fina, grossa, etc.
+• Forma → representação de figuras (geométricas ou livres).
+• Cor → expressa emoções (ex: vermelho = energia, azul = calma).
+• Textura → sensação de toque (áspero, liso, rugoso).
+• Luz e sombra → criam profundidade e destaque.
+" />
+
+
+        <TextView
+            android:id="@+id/txtCores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#BBDEFB"
+            android:padding="12dp"
+            android:text="
+🎨 Cores e Emoções
+
+
+As cores têm significados e podem mudar o que sentimos:
+• Vermelho → paixão, energia, força.
+• Amarelo → alegria, luz, calor.
+• Azul → tranquilidade, paz.
+• Verde → natureza, equilíbrio.
+• Preto → mistério, elegância.
+• Branco → pureza, calma.
+
+
+🎨 Dica: as cores primárias são vermelho, azul e amarelo. Da mistura delas surgem as cores secundárias!
+" />
+
+
+        <TextView
+            android:id="@+id/txtHistoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#F8BBD0"
+            android:padding="12dp"
+            android:text="
+🏺 Arte e História
+
+
+A arte acompanha a humanidade desde as pinturas rupestres nas cavernas até os murais urbanos modernos. Cada época e cultura tem seu estilo e significado.
+
+
+• Arte Rupestre → desenhos nas cavernas feitos há milhares de anos.
+• Arte Egípcia → usada em templos e tumbas, com figuras de perfil.
+• Arte Grega → esculturas com foco no corpo humano e na simetria.
+• Arte Medieval → ligada à religião e à vida nos castelos.
+• Arte Moderna → liberdade criativa e novas técnicas (como Picasso e Tarsila do Amaral).
+" />
+
+
+        <TextView
+            android:id="@+id/txtArtistas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#D1C4E9"
+            android:padding="12dp"
+            android:text="
+🧑‍🎨 Grandes Artistas
+
+
+• Leonardo da Vinci → pintor de 'Mona Lisa'.
+• Michelangelo → escultor e pintor da Capela Sistina.
+• Vincent van Gogh → pintor de 'Noite Estrelada'.
+• Tarsila do Amaral → artista brasileira, pintou 'Abaporu'.
+• Candido Portinari → retratou o povo brasileiro em suas obras.
+" />
+
+
+        <TextView
+            android:id="@+id/txtSustentabilidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#B2DFDB"
+            android:padding="12dp"
+            android:text="
+🌎 Arte e Sustentabilidade
+
+
+A arte também ajuda a cuidar do planeta! ♻️
+
+
+Podemos criar obras com materiais recicláveis, como garrafas PET, papelão, tampinhas e tecidos usados. Essa prática desperta a criatividade e mostra que é possível produzir beleza com consciência ambiental.
+" />
+
+
+        <TextView
+            android:text="✨ Criar é libertar a imaginação! A arte está em você, nas cores, nas músicas e em cada traço. Continue explorando o mundo com olhos de artista! 🎭"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:padding="16dp"
+            android:textColor="#4A148C"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#E3F2FD">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+
+            <ImageButton
+                android:id="@+id/btn_voltar_geografia"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/icon_voltar"
+                android:padding="6dp"
+                android:contentDescription="Voltar"
+                app:tint="#0D47A1" />
+
+
+            <TextView
+                android:id="@+id/titulo_geografia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🌍 Geografia – 5º Ano"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#0D47A1"
+                android:padding="8dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtConteudoGeografia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+A Geografia estuda o espaço em que vivemos, o planeta Terra 🌎, e como as pessoas se relacionam com ele. Ela nos ajuda a entender o clima, o relevo, os rios, os países e as diferenças entre os lugares do mundo.
+
+
+Clique nos botões abaixo para explorar o planeta!
+"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:padding="8dp"
+            android:lineSpacingExtra="4dp" />
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/btnOQueEhGeografia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="O que é Geografia? 🗺️"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#1A237E"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnContinentes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Continentes e Oceanos 🌎"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#01579B"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnRelevo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Relevo ⛰️"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#33691E"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnClima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clima e Tempo 🌤️"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#0277BD"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnRios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rios e Recursos 💧"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#00695C"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnUrbanoRural"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Urbano e Rural 🏙️"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#4A148C"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnRegioes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Regiões do Brasil 🇧🇷"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#BF360C"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnSustentabilidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sustentabilidade 🌱"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#2E7D32"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/txtOQueEhGeografia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#BBDEFB"
+            android:padding="12dp"
+            android:text="
+🗺️ O que é Geografia?
+
+
+Geografia é a ciência que estuda a Terra e as relações entre o ser humano e o ambiente.
+
+
+Ela observa como usamos o espaço, como as cidades crescem, como o clima muda e como os recursos naturais são utilizados.
+" />
+
+
+        <TextView
+            android:id="@+id/txtContinentes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#B3E5FC"
+            android:padding="12dp"
+            android:text="
+🌎 Os Continentes e Oceanos
+
+
+O planeta Terra é dividido em 6 continentes principais: América, Europa, África, Ásia, Oceania e Antártida.
+
+
+E temos 5 grandes oceanos: Atlântico, Pacífico, Índico, Glacial Ártico e Glacial Antártico. 🌊
+" />
+
+
+        <TextView
+            android:id="@+id/txtRelevo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#C8E6C9"
+            android:padding="12dp"
+            android:text="
+⛰️ Relevo e Paisagens Naturais
+
+
+O relevo é formado pelas diferentes formas da superfície da Terra: montanhas, planaltos, planícies e depressões.
+
+
+As paisagens naturais são os ambientes criados pela própria natureza: florestas, rios, desertos, mares e geleiras.
+" />
+
+
+        <TextView
+            android:id="@+id/txtClima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#B3E5FC"
+            android:padding="12dp"
+            android:text="
+🌤️ Clima e Tempo
+
+
+O tempo é o que sentimos no dia a dia (calor, frio, chuva). Já o clima é o conjunto das características do tempo ao longo de muitos anos em uma região.
+
+
+O Brasil, por exemplo, tem vários climas: equatorial, tropical, semiárido, subtropical e litorâneo.
+" />
+
+
+        <TextView
+            android:id="@+id/txtRios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#B2DFDB"
+            android:padding="12dp"
+            android:text="
+💧 Rios e Recursos Naturais
+
+
+Os rios são fontes de vida! Servem para consumo, agricultura, transporte e energia (hidrelétricas).
+
+
+No Brasil, temos grandes rios como o Rio Amazonas, Rio São Francisco e Rio Paraná.
+
+
+Os recursos naturais (água, solo, minerais) são essenciais — e precisamos usá-los com responsabilidade. 🌱
+" />
+
+
+        <TextView
+            android:id="@+id/txtUrbanoRural"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#E1BEE7"
+            android:padding="12dp"
+            android:text="
+🏙️ Espaço Urbano e Rural
+
+
+• Espaço urbano: áreas das cidades, com muitas construções, comércios, indústrias e serviços.
+• Espaço rural: áreas do campo, onde há plantações, criação de animais e natureza.
+
+
+Ambos são importantes e se complementam! 🌾🏙️
+" />
+
+
+        <TextView
+            android:id="@+id/txtRegioes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#FFCCBC"
+            android:padding="12dp"
+            android:text="
+🇧🇷 O Brasil e suas Regiões
+
+
+O Brasil é dividido em 5 regiões:
+
+
+• Norte: Amazônia, clima quente e úmido.
+• Nordeste: praias, sertão e clima tropical.
+• Centro-Oeste: cerrado e Pantanal.
+• Sudeste: mais populosa e industrializada.
+• Sul: clima frio e forte influência europeia.
+" />
+
+
+        <TextView
+            android:id="@+id/txtSustentabilidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#A5D6A7"
+            android:padding="12dp"
+            android:text="
+🌱 Geografia e Sustentabilidade
+
+
+A Geografia também ensina como viver de forma sustentável. Cuidar da natureza, evitar o desperdício e reciclar o lixo são atitudes que protegem o planeta. 🌎♻️
+
+
+Aprender Geografia é entender o mundo e o nosso papel dentro dele!
+" />
+
+
+        <TextView
+            android:text="✨ Estudar Geografia é aprender a olhar o mundo com curiosidade e respeito. Cada lugar tem sua beleza, cultura e importância no planeta que chamamos de lar! 🏡"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:textColor="#1A237E"
+            android:padding="16dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

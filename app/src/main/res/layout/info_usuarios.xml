@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".info_usuarios">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="32dp">
+
+
+            <ImageView
+                android:id="@+id/ivIconeConta"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/icon_conta"
+                app:tint="@android:color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="Ícone de Conta" />
+
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informações da Conta"
+                android:textColor="#000080"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivIconeConta" />
+
+
+            <TextView
+                android:id="@+id/tvSectionPessoal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Dados Pessoais"
+                android:textColor="#000080"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
+
+
+            <EditText
+                android:id="@+id/etNomeContaInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Nome Completo"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="8dp"
+                android:background="#E0F7FA"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@id/tvSectionPessoal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="Nome do Usuário"
+                android:autofillHints="name" />
+
+
+            <EditText
+                android:id="@+id/etEmailContaInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="16dp"
+                android:background="#E0F7FA"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@id/etNomeContaInfo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="email@exemplo.com"
+                android:autofillHints="emailAddress" />
+
+
+            <TextView
+                android:id="@+id/tvLabelCpf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPF:"
+                android:textColor="#000080"
+                android:textSize="16sp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etEmailContaInfo" />
+
+
+            <TextView
+                android:id="@+id/tvCpfContaInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000080"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintStart_toEndOf="@id/tvLabelCpf"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvLabelCpf"
+                app:layout_constraintBottom_toBottomOf="@id/tvLabelCpf"
+                tools:text="123.456.789-00" />
+
+
+            <EditText
+                android:id="@+id/etTelefoneContaInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Telefone"
+                android:inputType="phone"
+                android:maxLength="15"
+                android:padding="12dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="16dp"
+                android:background="#E0F7FA"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@id/tvLabelCpf"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="(11) 98765-4321"
+                android:autofillHints="phone" />
+
+
+            <Button
+                android:id="@+id/btnSalvarAlteracoesConta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Salvar Alterações"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:backgroundTint="@color/purple_500"
+                android:padding="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@id/etTelefoneContaInfo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <Button
+                android:id="@+id/btnVoltarConta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Voltar"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:backgroundTint="@color/teal_700"
+                android:padding="12dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/btnSalvarAlteracoesConta"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollViewMatematica"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F8F9FA">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+
+            <ImageButton
+                android:id="@+id/btnVoltarMatematica"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/icon_voltar"
+                android:padding="6dp"
+                android:contentDescription="Voltar para Estudos"
+                app:tint="#007AFF" />
+
+
+
+
+            <TextView
+                android:id="@+id/txtTituloMatematica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Matemática - 5º Ano"
+                android:textColor="#1B1B1B"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtConteudoMatematica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2D2D2D"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:text="
+Bem-vindo à Matemática do 5º ano!
+
+
+📘 Nesta unidade, você aprenderá:
+• Tabuada completa (1 a 100)
+• Operações com números decimais
+• Multiplicações e divisões com vírgula
+• Cálculo de áreas e perímetros
+• Curiosidades e história da Matemática
+
+
+Vamos praticar juntos!
+"
+            android:padding="8dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp">
+
+
+            <Button
+                android:id="@+id/btnVerFormulas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fórmulas"
+                android:textAllCaps="false"
+                android:backgroundTint="#007AFF"
+                android:textColor="#FFFFFF"
+                android:layout_margin="4dp"/>
+
+
+            <Button
+                android:id="@+id/btnVerCuriosidades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Curiosidades"
+                android:textAllCaps="false"
+                android:backgroundTint="#34C759"
+                android:textColor="#FFFFFF"
+                android:layout_margin="4dp"/>
+
+
+            <Button
+                android:id="@+id/btnVerCriadores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Criadores"
+                android:textAllCaps="false"
+                android:backgroundTint="#FF9500"
+                android:textColor="#FFFFFF"
+                android:layout_margin="4dp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtFormulasMatematica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#E3F2FD"
+            android:padding="12dp"
+            android:text="
+📐 FÓRMULAS IMPORTANTES
+
+
+🔹 Áreas:
+
+
+• Quadrado → A = lado × lado
+Exemplo: A = 4 × 4 = 16 cm²
+
+
+• Retângulo → A = base × altura
+Exemplo: A = 8 × 3 = 24 cm²
+
+
+• Triângulo → A = (base × altura) ÷ 2
+Exemplo: A = (6 × 4) ÷ 2 = 12 cm²
+
+
+• Círculo → A = π × raio²
+Exemplo: A = 3,14 × 3² = 28,26 cm²
+
+
+• Losango → A = (D × d) ÷ 2
+Exemplo: A = (10 × 8) ÷ 2 = 40 cm²
+
+
+• Trapézio → A = (B + b) × h ÷ 2
+Exemplo: A = (8 + 4) × 5 ÷ 2 = 30 cm²
+
+
+🔸 Perímetro (P):
+Soma de todos os lados da figura.
+Exemplo: Quadrado de lado 5 → P = 5 + 5 + 5 + 5 = 20 cm
+
+
+🔸 Frações:
+1/2 significa metade de algo.
+Exemplo: 1/2 de 10 = 5.
+
+
+🔸 Números Decimais:
+São números com vírgula.
+Exemplo: 3,5 é igual a 3 unidades e 5 décimos.
+" />
+
+
+        <TextView
+            android:id="@+id/txtCuriosidadesMatematica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#E8F5E9"
+            android:padding="12dp"
+            android:text="
+🎯 REVISÃO: TABUADA E OPERAÇÕES
+
+
+🔹 Tabuada do 1 ao 10 (principais):
+1 × 1 = 1  1 × 2 = 2  ... 1 × 10 = 10
+2 × 1 = 2  2 × 2 = 4  ... 2 × 10 = 20
+5 × 7 = 35  7 × 8 = 56  9 × 9 = 81
+
+
+🔹 Dica:
+Lembre-se que multiplicar é somar várias vezes o mesmo número:
+3 × 4 = 3 + 3 + 3 + 3 = 12
+
+
+🔹 Divisões:
+20 ÷ 5 = 4
+45 ÷ 9 = 5
+120 ÷ 10 = 12
+
+
+🔹 Divisões com 2 ou 3 algarismos:
+Exemplo: 324 ÷ 6 = 54
+Porque 6 × 54 = 324.
+
+
+🔹 Multiplicação com vírgula:
+3,2 × 4 = 12,8
+(Conta normalmente e depois coloca a vírgula)
+
+
+🔹 Divisão com vírgula:
+6,4 ÷ 2 = 3,2
+Basta dividir e manter a mesma posição decimal.
+
+
+🔹 Dica final:
+Se o número tiver duas casas decimais (ex: 3,45), conte-as também no resultado.
+Exemplo: 3,45 × 2 = 6,90
+" />
+
+
+        <TextView
+            android:id="@+id/txtCriadoresMatematica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#FFF8E1"
+            android:padding="12dp"
+            android:text="
+👩‍🏫 CRIADORES E HISTÓRIA
+
+
+📜 A Matemática existe há milhares de anos!
+
+
+• Pitágoras (582–496 a.C.) — Descobriu o Teorema de Pitágoras (a² + b² = c²)
+• Euclides — Conhecido como o 'pai da Geometria'.
+• Arquimedes — Criou fórmulas para medir áreas e volumes.
+• Fibonacci — Criou a famosa sequência (1, 1, 2, 3, 5, 8, 13, ...).
+• Hipátia — Primeira mulher matemática da história registrada.
+
+
+💡 Curiosidade: A palavra 'Matemática' vem do grego 'mathema', que significa 'conhecimento'.
+"
+            android:paddingBottom="30dp" />
+
+
+    </LinearLayout>
+</ScrollView>

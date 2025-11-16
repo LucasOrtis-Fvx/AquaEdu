@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1F5FE"
+    android:padding="16dp"
+    tools:context="com.example.projetoas.ODSAtividadeActivity"> <LinearLayout
+    android:id="@+id/layoutHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="24dp">
+
+
+    <Button
+        android:id="@+id/btn_voltar_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:backgroundTint="#00796B"
+        android:textColor="#FFFFFF"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Atividades de Sustentabilidade"
+        android:textColor="#004D40"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                app:cardBackgroundColor="#FFCDD2"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:text="1. Avaliação de Impacto e Diagnóstico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#B71C1C"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:text="Realização de inventário de emissões de carbono e análise de vulnerabilidade climática local."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#424242"
+                        android:layout_marginTop="6dp" />
+
+
+                    <ProgressBar
+                        android:id="@+id/progress_impacto"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="12dp"
+                        android:progress="75"
+                        android:progressTint="#B71C1C" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                app:cardBackgroundColor="#FFF9C4"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:text="2. Gestão de Resíduos e Circularidade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FBC02D"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:text="Implementação de sistema de coleta seletiva avançada e desenvolvimento de projetos de upcycling."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#424242"
+                        android:layout_marginTop="6dp" />
+
+
+                    <ProgressBar
+                        android:id="@+id/progress_residuos"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="12dp"
+                        android:progress="60"
+                        android:progressTint="#FBC02D" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                app:cardBackgroundColor="#BBDEFB"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:text="3. Eficiência Hídrica e Energética"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#1A237E"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:text="Instalação de sistemas de captação de água pluvial e auditoria para substituição de lâmpadas por LED de baixo consumo."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#424242"
+                        android:layout_marginTop="6dp" />
+
+
+                    <ProgressBar
+                        android:id="@+id/progress_eficiencia"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="12dp"
+                        android:progress="80"
+                        android:progressTint="#1A237E" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                app:cardBackgroundColor="#C8E6C9"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:text="4. Conservação de Biodiversidade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#33691E"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:text="Monitoramento de áreas de mata ciliar e desenvolvimento de programas de educação ambiental sobre espécies nativas e ameaçadas."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#424242"
+                        android:layout_marginTop="6dp" />
+
+
+                    <ProgressBar
+                        android:id="@+id/progress_biodiversidade"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="12dp"
+                        android:progress="55"
+                        android:progressTint="#33691E" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                app:cardBackgroundColor="#E1BEE7"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:text="5. Engajamento Comunitário e Parcerias"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#6A1B9A"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:text="Organização de workshops sobre práticas sustentáveis e consolidação de parcerias com ONGs locais e órgãos governamentais."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#424242"
+                        android:layout_marginTop="6dp" />
+
+
+                    <ProgressBar
+                        android:id="@+id/progress_engajamento"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="12dp"
+                        android:progress="90"
+                        android:progressTint="#6A1B9A" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

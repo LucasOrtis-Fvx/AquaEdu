@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFDE7">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+
+            <ImageButton
+                android:id="@+id/btn_voltar_historia"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/icon_voltar"
+                android:padding="6dp"
+                android:contentDescription="Voltar"
+                app:tint="#6D4C41" />
+
+
+            <TextView
+                android:id="@+id/titulo_historia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📜 História – 5º Ano"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#6D4C41"
+                android:padding="8dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtConteudoHistoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+A História nos ajuda a entender o passado, compreender o presente e construir o futuro. Ela conta as trajetórias dos povos, suas conquistas, lutas, culturas e transformações. Vamos aprender sobre o Brasil e o mundo de forma divertida e clara! 🌍
+
+
+Clique nos botões abaixo para viajar no tempo!
+"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:padding="8dp"
+            android:lineSpacingExtra="4dp" />
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/btnOQueEhHistoria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="O que é História 🕰️"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#4E342E"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnEras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eras Históricas 📅"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#BF360C"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnFormacaoBrasil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Formação do Brasil 🇧🇷"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#1B5E20"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnImperioRepublica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Império e República 👑"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#3E2723"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnBrasilContemporaneo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brasil Atual ⚙️"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#0D47A1"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnCultura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cultura e Identidade 🧭"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#880E4F"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+                <Button
+                    android:id="@+id/btnSustentabilidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sustentabilidade 🌱"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#2E7D32"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp"/>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/txtOQueEhHistoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#D7CCC8"
+            android:padding="12dp"
+            android:text="
+🕰️ O que é História?
+
+
+História é a ciência que estuda as ações do ser humano no tempo e no espaço. Ela busca entender como as pessoas viviam, pensavam e se organizavam em diferentes épocas.
+
+
+A História é dividida em períodos e nos ajuda a perceber que o mundo está sempre mudando!
+" />
+
+
+        <TextView
+            android:id="@+id/txtEras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#FFCCBC"
+            android:padding="12dp"
+            android:text="
+📅 As Eras da História
+
+
+A História é dividida em grandes períodos chamados eras históricas:
+
+
+• Pré-História: antes da escrita; inclui o Paleolítico e o Neolítico.
+• Idade Antiga: surgimento das primeiras civilizações (Egito, Grécia, Roma).
+• Idade Média: castelos, cavaleiros e feudos (séculos V ao XV).
+• Idade Moderna: invenções, descobrimentos (grandes navegações).
+• Idade Contemporânea: de 1789 até hoje, marcada por revoluções e tecnologia.
+" />
+
+
+        <TextView
+            android:id="@+id/txtFormacaoBrasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#C8E6C9"
+            android:padding="12dp"
+            android:text="
+🇧🇷 Formação do Brasil
+
+
+A história do Brasil começou com os povos indígenas.
+
+
+📍 1500: chegada dos portugueses com Pedro Álvares Cabral.
+
+
+Durante a colonização, o Brasil foi explorado (pau-brasil, açúcar, ouro). Indígenas e africanos foram escravizados.
+
+
+Em 1822, Dom Pedro I proclamou a Independência do Brasil.
+" />
+
+
+        <TextView
+            android:id="@+id/txtImperioRepublica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#EFEBE9"
+            android:padding="12dp"
+            android:text="
+👑 Império e República
+
+
+Após a independência, o Brasil teve dois imperadores:
+• Dom Pedro I (1822–1831)
+• Dom Pedro II (1840–1889) – promoveu o fim da escravidão.
+
+
+Em 1889, o Brasil virou uma República, liderada pelo Marechal Deodoro da Fonseca.
+" />
+
+
+        <TextView
+            android:id="@+id/txtBrasilContemporaneo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#BBDEFB"
+            android:padding="12dp"
+            android:text="
+⚙️ Brasil Contemporâneo
+
+
+Depois da República, o Brasil passou por vários períodos, incluindo:
+• República Velha (1889–1930)
+• Era Vargas (1930–1945)
+• Ditadura Militar (1964–1985)
+
+
+Hoje, o Brasil é uma democracia, onde os cidadãos escolhem seus líderes pelo voto.
+" />
+
+
+        <TextView
+            android:id="@+id/txtCultura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#F8BBD0"
+            android:padding="12dp"
+            android:text="
+🧭 Cultura e Identidade
+
+
+O Brasil é formado por uma grande mistura de povos e culturas: indígenas, africanas, europeias e asiáticas.
+
+
+Essa diversidade cria a riqueza cultural do nosso país. A música, a culinária e as festas populares (Carnaval) são parte dessa herança histórica. 🎉
+" />
+
+
+        <TextView
+            android:id="@+id/txtSustentabilidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#A5D6A7"
+            android:padding="12dp"
+            android:text="
+🌱 História e Sustentabilidade
+
+
+A História nos ensina a cuidar do futuro. 🌎
+Ao conhecer a exploração de recursos naturais no passado, entendemos a importância da sustentabilidade e da preservação ambiental hoje.
+
+
+Podemos aprender com os erros do passado para proteger o planeta e buscar um mundo mais justo!
+" />
+
+
+        <TextView
+            android:text="✨ Estudar História é como viajar no tempo! Cada acontecimento nos ensina algo sobre quem somos e como podemos transformar o mundo. 🚀"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:textColor="#4E342E"
+            android:padding="16dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

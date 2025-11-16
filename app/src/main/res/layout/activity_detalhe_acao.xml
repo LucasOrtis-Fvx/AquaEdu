@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF"
+    tools:context=".DetalheAcaoActivity">
+
+
+    <TextView
+        android:id="@+id/DetalheTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#004D40"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="Limpeza da Praia de Copacabana" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#B2DFDB" />
+
+
+    <TextView
+        android:id="@+id/DetalheDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="4dp"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        tools:text="Descrição longa e detalhada da atividade de voluntariado, explicando os objetivos, o que levar, quem procurar, horários, e a importância da ação para o meio ambiente marinho." />
+
+
+</LinearLayout>

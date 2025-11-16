@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="app_name">AquaEdu</string>
+    <string name="app_logo">Logo do AquaEdu</string>
+    <string name="welcome_message">Aprender. Conectar. Transformar. Seu caminho para um futuro sustentável.</string>
+    <string name="start_studying">Começar a Estudar</string>
+    <string name="about_project">Sobre o Projeto e Sustentabilidade</string>
+    <string name="ods_footer_message">ODS 4, 14 e 17 | Educação de Qualidade e Vida Aquática</string>
+    <string name="header_title">Olá, %s!</string>
+    <string name="header_subtitle">Seu aprendizado, sua autonomia.</string>
+
+
+    <string name="card_study_icon_description">Ícone ODS e Mar</string>
+    <string name="card_study_title">ODS &amp; Mar</string>
+    <string name="card_study_description">Explore os ODS e a importância da vida marinha.</string>
+
+
+    <string name="secondary_title">Ações e Conscientização</string>
+
+
+    <string name="button_ods_mar">Estudar Agora</string>
+    <string name="button_progress">Meu Progresso</string>
+    <string name="button_settings">Ajustes</string>
+
+
+    <string name="footer_text">Alinhado aos ODS 4, 14 e 17 - Educação de Qualidade e Vida na Água.</string>
+
+
+    <string name="titulo_sobre">Sobre o Projeto</string>
+    <string name="subtitulo_sobre">Conheça a finalidade e os objetivos que nos movem</string>
+    <string name="botao_motivos">Motivos do Projeto</string>
+    <string name="botao_ods">ODS Utilizadas</string>
+    <string name="finalidade_projeto">O Brasil enfrenta grandes desafios na educação pública, marcados pela falta de infraestrutura, baixa valorização dos professores e índices preocupantes de alfabetização — em 2024, apenas 59,2% dos alunos das redes públicas sabiam ler e escrever até o 2º ano. Além disso, há sérios problemas ambientais, como a poluição de rios e oceanos, que chega a cerca de 6,4 milhões de toneladas de lixo por ano, afetando 88% da vida marinha.
+
+
+Diante disso, o projeto propõe o uso da tecnologia como aliada para enfrentar essas questões. Por meio de um aplicativo educacional com flashcards, resumos e quizzes, buscamos melhorar o aprendizado e promover a conscientização sobre sustentabilidade e preservação dos ecossistemas aquáticos.
+
+
+Nosso objetivo é tornar a educação mais acessível, prática e interativa, formando jovens críticos e engajados com o futuro do planeta. O projeto se alinha aos ODS 4, 14 e 17, reforçando o compromisso com a qualidade de ensino, a proteção ambiental e a cooperação sustentável.</string>
+
+
+
+
+    <string name="my_progress_title">Meu Progresso</string>
+    <string name="last_week_summary">Sua última semana foi assim (%s)</string>
+    <string name="participation_title">Participação nas atividades</string>
+    <string name="performance_title">Desempenho nas atividades</string>
+    <string name="previous_week">Semana anterior: %s</string>
+    <string name="chapters_summary">Resumo dos capítulos estudados</string>
+    <string name="needs_more_study">Precisa estudar mais</string>
+    <string name="almost_there">Quase lá</string>
+    <string name="doing_great">Mandou bem!</string>
+    <string name="no_chapter">Nenhum capítulo</string>
+
+
+    <string name="settings_title">Ajustes</string>
+    <string name="user_name_placeholder">Nome do Aluno</string>
+    <string name="user_email_placeholder">aluno@email.com</string>
+    <string name="change_profile_picture">Alterar foto de perfil</string>
+    <string name="section_appearance">Aparência</string>
+    <string name="dark_theme">Tema Escuro</string>
+    <string name="section_account">Conta</string>
+    <string name="account_information">Informações da Conta</string>
+    <string name="manage_guardians">Cadastrar Responsáveis</string>
+    <string name="section_other">Outros</string>
+    <string name="past_subjects">Matérias Antigas</string>
+    <string name="guardians_information">Informações dos Responsáveis</string>
+    <string name="question_progress">Questão %1$d de %2$d</string>
+
+
+</resources>

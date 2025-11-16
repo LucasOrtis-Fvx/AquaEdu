@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginHorizontal="8dp"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@android:color/white">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/emojiContainer"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:cardCornerRadius="35dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#E0F7FA"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+
+            <TextView
+                android:id="@+id/txtEmoji"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="🐋"
+                android:textSize="32sp"
+                android:gravity="center"
+                android:textColor="@android:color/black"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/txtNome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Baleia Azul"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#37474F"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintStart_toEndOf="@id/emojiContainer"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="EM EXTINÇÃO"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="2dp"
+            android:background="#FFEBEE"
+            android:textColor="#D32F2F"
+            app:layout_constraintStart_toEndOf="@id/emojiContainer"
+            app:layout_constraintTop_toBottomOf="@id/txtNome"/>
+
+
+        <TextView
+            android:id="@+id/txtDescricao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Descrição breve..."
+            android:textSize="14sp"
+            android:textColor="#78909C"
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:layout_constraintStart_toEndOf="@id/emojiContainer"
+            app:layout_constraintTop_toBottomOf="@id/txtStatus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
